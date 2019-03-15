@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='eng'>
+
+<head>
+  <meta charset="utf-8" />
+  <script src="js/import.js"></script>
+  <title>Popup Test</title>
+  
+  <script>
+    $().ready(function () {
+      // $('#comment0').popup({
+      //   popup: $('#popup0'),
+      //   on: 'click',
+      // });
+
+      $("#commentWindow").hide();
+
+      $('#comment0').click(function() {
+        $("#commentWindow").toggle();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <br><br><br>
+
+  <span id="comment0">Show comment window</span>
+
+  <!-- <div id="popup0" class="ui custom popup top left transition hidden">
+    <b>What is an amendment?</b>
+    <button class="ui primary button">Add Reply</button>
+    <button class="ui button">Mark as Answered</button>
+  </div> -->
+
+  <div id="commentWindow" class="ui card">
+    <div class="content">
+      <b>What is an amendment?</b>
+      <!-- Comments area -->
+
+      <!-- End Comments area -->
+    </div>
+  </div>
+
+</body>
+</html>
